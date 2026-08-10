@@ -1,274 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Poliart | Tienda Online</title>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poliart | Arte en poligonos</title>
+    <meta name="description" content="Poliart crea figuras decorativas con arte en poligonos, materiales reciclados y disenos personalizados.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
-
-<header>
-
-<div class="logo">
-<h1>POLIART</h1>
-<p>Arte en Polígonos</p>
-</div>
-
-<div class="buscador">
-
-<input
-type="text"
-placeholder="Buscar productos...">
-
-<button>
-
-<i class="fa fa-search"></i>
-
-</button>
-
-</div>
-
-<div class="acciones">
-
-<div class="carrito">
-
-<i class="fa fa-shopping-cart"></i>
-
-<span id="cantidadCarrito">0</span>
-
-</div>
-
-</div>
-
-</header>
-
-<nav>
-
-<a href="#">Inicio</a>
-
-<a href="#productos">Productos</a>
-
-<a href="#empresa">Empresa</a>
-
-<a href="#contacto">Contacto</a>
-
-</nav>
-
-<section class="banner">
-
-<h2>¡Bienvenido a Poliart!</h2>
-
-<p>
-
-Diseños únicos realizados con materiales reciclados.
-
-</p>
-
-</section>
-
-<section id="productos">
-
-<h2>
-
-Nuestros Productos
-
-</h2>
-
-<div id="listaProductos">
-
-</div>
-
-</section>
-
-<section id="empresa">
-
-<h2>
-
-Sobre Nosotros
-
-</h2>
-
-<p>
-
-Poliart es un emprendimiento dedicado a crear figuras decorativas basadas en arte con polígonos.
-
-Todos nuestros productos son personalizados y realizados con materiales reciclados.
-
-</p>
-
-<h3>
-
-Dirección
-
-</h3>
-
-<p>
-
-Av. Siempre Viva 123
-
-Buenos Aires
-
-Argentina
-
-</p>
-
-<h3>
-
-Horarios
-
-</h3>
-
-<p>
-
-Lunes a Viernes
-
-09:00 a 18:00
-
-</p>
-
-<h3>
-
-Métodos de Pago
-
-</h3>
-
-<ul>
-
-<li>Mercado Pago</li>
-
-<li>Transferencia</li>
-
-<li>Efectivo</li>
-
-<li>Tarjeta de Crédito</li>
-
-<li>Tarjeta de Débito</li>
-
-</ul>
-
-</section>
-
-<section id="carrito">
-
-<h2>
-
-Mi Carrito
-
-</h2>
-
-<div id="productosCarrito">
-
-No hay productos.
-
-</div>
-
-<h3>
-
-Total:
-
-$
-
-<span id="total">
-
-0
-
-</span>
-
-</h3>
-
-<button id="comprar">
-
-Finalizar Compra
-
-</button>
-
-</section>
-
-<section id="contacto">
-
-<h2>
-
-Contacto
-
-</h2>
-
-<p>
-
-📞 Teléfono:
-
-+54 9 11 1234-5678
-
-</p>
-
-<p>
-
-📧 Gmail:
-
-poliart@gmail.com
-
-</p>
-
-<p>
-
-📍 Dirección:
-
-Av. Siempre Viva 123
-
-Buenos Aires
-
-</p>
-
-<p>
-
-📦 Retiro:
-
-48 horas luego del pago.
-
-</p>
-
-<form>
-
-<input
-type="text"
-placeholder="Nombre">
-
-<input
-type="email"
-placeholder="Correo">
-
-<textarea
-placeholder="Escriba su pedido">
-</textarea>
-
-<button>
-
-Enviar Pedido
-
-</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Poliart
-
-Todos los derechos reservados.
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <header class="site-header">
+        <a href="#inicio" class="logo">
+            <span class="logo-mark">P</span>
+            <div>
+                <h1>POLIART</h1>
+                <p>Arte en poligonos</p>
+            </div>
+        </a>
+
+        <div class="buscador">
+            <input id="busqueda" type="text" placeholder="Buscar figuras, animales o personalizados...">
+            <button aria-label="Buscar">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+        <a href="#carrito" class="carrito" aria-label="Ver carrito">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cantidadCarrito">0</span>
+        </a>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section class="banner" id="inicio">
+            <div class="banner-copy glass">
+                <span class="eyebrow">Decoracion sustentable</span>
+                <h2>Figuras geometricas con identidad propia.</h2>
+                <p>
+                    Disenos unicos inspirados en el arte poligonal, realizados con materiales reciclados
+                    y pensados para decorar espacios con color, volumen y conciencia ambiental.
+                </p>
+                <a href="#productos" class="boton">Ver productos</a>
+            </div>
+
+            <div class="poly-showcase" aria-label="Figura poligonal decorativa">
+                <span class="poly p1"></span>
+                <span class="poly p2"></span>
+                <span class="poly p3"></span>
+                <span class="poly p4"></span>
+                <span class="poly p5"></span>
+                <span class="poly p6"></span>
+            </div>
+        </section>
+
+        <section id="productos" class="section">
+            <div class="titulo">
+                <span class="eyebrow">Catalogo</span>
+                <h2>Nuestros productos</h2>
+                <p>Figuras listas para regalar, decorar o personalizar segun el espacio.</p>
+            </div>
+
+            <div id="listaProductos"></div>
+        </section>
+
+        <section id="empresa" class="section split">
+            <div class="glass info-card">
+                <span class="eyebrow">Sobre nosotros</span>
+                <h2>Arte, reciclaje y geometria.</h2>
+                <p>
+                    Poliart es un emprendimiento dedicado a crear figuras decorativas basadas en arte con poligonos.
+                    Cada pieza combina diseno, paciencia y materiales reciclados para transformar descarte en objetos
+                    visuales con personalidad.
+                </p>
+                <p>
+                    Tambien realizamos productos personalizados: podes elegir tematica, colores y tamano segun tu idea.
+                </p>
+            </div>
+
+            <div class="datos glass">
+                <article>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Direccion</h3>
+                    <p>Av. Siempre Viva 123, Buenos Aires, Argentina.</p>
+                </article>
+                <article>
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Horarios</h3>
+                    <p>Lunes a viernes de 09:00 a 18:00.</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Metodos de pago</h3>
+                    <p>Mercado Pago, transferencia, efectivo, credito y debito.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="carrito" class="section">
+            <div class="carrito-panel glass">
+                <h2>Mi carrito</h2>
+                <div id="productosCarrito">No hay productos.</div>
+                <h3>Total: $<span id="total">0</span></h3>
+                <button id="comprar">Finalizar compra</button>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contacto">
+            <div class="glass contacto-card">
+                <span class="eyebrow">Contacto</span>
+                <h2>Hablemos de tu idea</h2>
+                <p><i class="fa-solid fa-phone"></i> +54 9 11 1234-5678</p>
+                <p><i class="fa-regular fa-envelope"></i> poliart@gmail.com</p>
+                <p><i class="fa-solid fa-box"></i> Retiro disponible 48 horas luego del pago.</p>
+
+                <form>
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo">
+                    <textarea placeholder="Escriba su pedido"></textarea>
+                    <button>Enviar pedido</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Poliart - Arte en poligonos con materiales reciclados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
