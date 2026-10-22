@@ -2,7 +2,7 @@ const productos = [
     {
         id: 1,
         nombre: "Figura geometrica Lobo",
-        precio: 25000,
+        precio: 3500,
         stock: 15,
         fondo: "linear-gradient(135deg, #d8e7ff, #f8fbff)",
         forma: "linear-gradient(135deg, #3483fa, #17202f)"
@@ -10,7 +10,7 @@ const productos = [
     {
         id: 2,
         nombre: "Figura geometrica Leon",
-        precio: 28000,
+        precio: 3500,
         stock: 12,
         fondo: "linear-gradient(135deg, #fff1b8, #fffaf0)",
         forma: "linear-gradient(135deg, #ff8500, #ffe600)"
@@ -18,7 +18,7 @@ const productos = [
     {
         id: 3,
         nombre: "Figura geometrica Aguila",
-        precio: 32000,
+        precio: 3500,
         stock: 8,
         fondo: "linear-gradient(135deg, #e8f7ed, #f8fffb)",
         forma: "linear-gradient(135deg, #00a650, #3483fa)"
@@ -26,7 +26,7 @@ const productos = [
     {
         id: 4,
         nombre: "Arte personalizado",
-        precio: 35000,
+        precio: 4500,
         stock: 20,
         fondo: "linear-gradient(135deg, #f2eaff, #fff8f2)",
         forma: "linear-gradient(135deg, #6a45d8, #ff8500)"
